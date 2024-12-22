@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="483.0" prefWidth="536.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kelompok.tiga.InfoGedungController">
+   <children>
+      <Label layoutX="212.0" layoutY="32.0" text="Info Gedung">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TableView fx:id = "tableView" layoutX="35.0" layoutY="78.0" prefHeight="333.0" prefWidth="465.0">
+        <columns>
+          <TableColumn fx:id="colIdGedung" prefWidth="75.0" text="Id Gedung" />
+          <TableColumn fx:id="colNama" prefWidth="75.0" text="Nama" />
+            <TableColumn fx:id="colPengelola" prefWidth="140.0" text="Pengelola" />
+            <TableColumn fx:id="colKontak" prefWidth="173.0" text="Kontak" />
+        </columns>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TableView>
+      <Button layoutX="35.0" layoutY="425.0" mnemonicParsing="false" onAction="#handleBackButton" prefHeight="30.0" prefWidth="84.0" text="Kembali" />
+      <Button layoutX="409.0" layoutY="425.0" mnemonicParsing="false" onAction="#handleInfoRuangan" prefHeight="30.0" prefWidth="91.0" text="Info Ruangan" />
+   </children>
+</AnchorPane>
